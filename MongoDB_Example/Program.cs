@@ -11,14 +11,7 @@ namespace MongoDB_Example
         {
             //NOTES:
             //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            //My DB details
-            //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            //Wadders_88 | d7BlSqKCqqfCHY4Z | mysampledb-shard-00-02.xcrwt.mongodb.net:27017 | Cluster name = mySampleDB
-            //Database name(s) = sample_airbnb | sample_analytics | sample_geospatial | sample_mflix | sample_restaurants | sample_supplies | sample_training | sample_weatherdata
-            //Collections (aka tables) = listed under each database ^
-            //Connection string = mongodb+srv://Wadders_88:O2z4HTSyLDrecSeo@mysampledb.xcrwt.mongodb.net/mysampledb?retryWrites=true&w=majority
-            //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            //Tom's DB details
+            //DB details
             //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //Wadders_88 | d7BlSqKCqqfCHY4Z | sampledb-shard-00-02.egd8v.mongodb.net:27017 | Cluster name = sampledb
             //Database name(s) = sample_airbnb | sample_analytics | sample_geospatial | sample_mflix | sample_restaurants | sample_supplies | sample_training | sample_weatherdata
@@ -35,9 +28,9 @@ namespace MongoDB_Example
             Console.WriteLine("Collection Names = ");
             var dbTableList = database.ListCollectionNames().ToList();
             foreach (var db in dbTableList)
-                {
-                    Console.WriteLine(db);
-                }
+            {
+                Console.WriteLine(db);
+            }
             Console.WriteLine("");
 
             //BsonDoc for dbstats
